@@ -163,14 +163,14 @@ const data4: Data = source4.fetch();
 するとこれはエラーが出ることなく実行できます。これが構造的部分型の大きな特徴で、File, Requestのシグネチャが同じために可換になります。
 
 ```typescript
-interface IInputSource {
+interface InputSource {
   destination: string;
 
   fetch(): Data;
 }
 ```
 
-File, Requestは共にこのIInputSourceのようなインターフェースであると解釈されるためこのようなことが起こります。
+File, Requestは共にこのInputSourceのようなインターフェースであると解釈されるためこのようなことが起こります。
 
 ## TypeScriptでさらに注意すること
 
